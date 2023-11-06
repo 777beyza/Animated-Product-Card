@@ -1,2 +1,3 @@
 # Animated-Product-Card
- cards moving animation
+ moving shopping cards 
+will be updated soon and make it responsive + will be able to switch colors.

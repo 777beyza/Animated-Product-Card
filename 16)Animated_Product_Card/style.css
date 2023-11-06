@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Kanit:wght@300&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600&family=Roboto:ital@1&family=Ysabeau:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card{
+    max-width: 350px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.product-card .logo-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card .logo-cart img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.product-card .logo-cart i{
+    font-size: 30px;
+    color: #228B22;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.product-card .logo-cart i:hover{
+    color: rgba(151, 131, 131, 0.662);
+}
+
+.product-card .main-images{
+    position: relative;
+    height: 210px;
+}
+
+.product-card .main-images img{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transform: rotate(16deg);
+    left: 12px;
+    top: -40px;
+    z-index: -1;
+    /* zindexle lorem yazısının üstüne gelen beyaz kısmı yok ettik */
+}
+
+.product-card .shoe-details .shoe-name{
+    font-size: 30px;
+    font-weight: 500;
+    color: 	#484646;
+}
+
+.product-card .shoe-details p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    text-align: justify;
+    /*  "text-align" özelliği "justify" olarak ayarlandığında,
+    her satırın genişliği eşit olacak ve sol ve sağ kenar boşlukları
+    düz olacak şekilde uzatılır. */
+}
+
+.product-card .shoe-details .stars{
+    margin: 0 -1;
+    color: rgb(232, 232, 16);
+    cursor: pointer;
+}
+
+.color-price .color-options{
+    display: flex;
+    align-items: center;
+}
+
+.color-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.color-price .color-options .color{
+    font-size: 18px;
+    font-weight: 400;
+    color: #484646;
+    margin-right: 8px;
+}
+
+.color-options .circles{
+    display: flex;
+}
+
+.color-options .circles .circle{
+    height: 18px;
+    width: 18px;
+    background-color: #0071c7;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.color-options .circles .circle.blue.active{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px #0071c7
+}
+
+.color-options .circles .circle.pink{
+    background: #fa1795;
+}
+.color-options .circles .circle.pink.active{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px #fa1795;
+}
+/*background yaptık çünkü tıklayınca shadow gelsin dış pembe iç beyaz kalsın diye*/
+
+.color-options .circles .circle.yellow{
+    background: #f5da00;
+}
+.color-options .circles .circle.yellow.active{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 4px #f5da00;
+}
+.color-price .price{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-price .price .price_num{
+    color: #228B22;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.color-price .price .price_letter{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -4px;
+    color: #31a131
+}
